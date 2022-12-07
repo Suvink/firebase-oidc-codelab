@@ -9,14 +9,11 @@ const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true)
 
-    const signInWithAsgardeo = () => {
-        const oidcProvider = new OAuthProvider('oidc.asgardeo');
-        return signInWithPopup(auth, oidcProvider);
-    }
+    // (2): Implement the signInWithAsgardeo() method
 
-    const signOutFromAsgardeo = () => {
-        return signOut(auth);
-    }
+    // (3): Implement the signOutFromAsgardeo() method
+
+
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
@@ -27,7 +24,8 @@ const AuthContextProvider = ({ children }) => {
         }
     }, [])
 
-    return <authContext.Provider value={{ user, loading, signInWithAsgardeo, signOutFromAsgardeo }}>
+    // (4): Pass the login and logout methods to the context provider.
+    return <authContext.Provider value={{ user, loading}}>
         {children}
     </authContext.Provider>
 }

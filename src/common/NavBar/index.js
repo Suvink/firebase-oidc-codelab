@@ -9,27 +9,13 @@ import "./index.css";
 
 const NavBar = () => {
 
-  const { user, signOutFromAsgardeo } = useAuth();
+  // (8): Import the signOutFromAsgardeo() method and user object from the AuthContext
+  
+  
   const history = useHistory();
   const { enqueueSnackbar } = useSnackbar();
 
-  const logout = async () => {
-    try {
-      const logoutResponse = await signOutFromAsgardeo();
-      if (logoutResponse) {
-        history.replace("/");
-      }
-    } catch (err) {
-      enqueueSnackbar("Logout Failed", {
-        variant: 'error',
-        anchorOrigin: {
-          vertical: "top",
-          horizontal: "right",
-        },
-
-      });
-    }
-  }
+  // (9): Implement the handleLogout() method
 
   return (
     <nav
@@ -66,7 +52,7 @@ const NavBar = () => {
           <a className="navbar-item">Dev Fest Sri Lanka</a>
           <a className="navbar-item">Asgardeo</a>
         </div>
-
+        
         {user && <div className="navbar-end">
           <a className="navbar-item">Hi {user ? user.displayName.split(" ")[0] : "There"}!</a>
           <div className="navbar-item has-dropdown is-hoverable">
@@ -84,7 +70,8 @@ const NavBar = () => {
               <a className="navbar-item">
                 Profile
               </a>
-              <button className="navbar-item sign-out-button" onClick={logout}>
+              {/* (10): Link the logout button to the handleLogout() method */}
+              <button className="navbar-item sign-out-button" onClick={() => {}}>
                 Sign Out
               </button>
             </div>
