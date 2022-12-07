@@ -1,0 +1,35 @@
+.top-navbar {
+    background-color: #202123 !important;
+    color: #E8EAED !important;
+}
+
+.navbar-item {
+    color: #E8EAED !important;
+}
+
+.navbar-item:hover {
+    background-color: transparent !important;
+}
+
+.navbar-item img {
+    max-height: 3rem !important;
+}
+
+.navbar-menu,
+.navbar-link {
+    background-color: #202123 !important;
+    color: #E8EAED !important;
+}
+
+.navbar-dropdown {
+    background-color: #202123 !important;
+    color: #E8EAED !important;
+    border-top: none !important;
+}
+
+.sign-out-button {
+    background-color: #202123 !important;
+    color: #E8EAED !important;
+    border: none !important;
+    cursor: pointer;
+}

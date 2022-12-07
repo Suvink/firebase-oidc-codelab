@@ -1,0 +1,30 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 62px);
+    min-height: -o-calc(100vh - 62px);
+    min-height: -webkit-calc(100vh - 62px);
+    min-height: -moz-calc(100vh - 62px);
+}
+.login-box{
+    background-color: #fcd46c !important;
+    color: #000 !important; 
+    border-radius: 0.75rem !important;
+}
+.login-image{
+    height: 5rem;
+    border-radius: 15px;
+}
+.login-button{
+    background-color: #202123 !important;
+    color: #E8EAED !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+}
+
+@media only screen and (max-width: 769px) {
+    .login-column{
+        margin: 2rem !important;
+    }
+  }

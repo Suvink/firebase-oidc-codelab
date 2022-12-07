@@ -1,0 +1,25 @@
+.home-section{
+    padding: 2rem;
+    min-height: calc(100vh - 62px);
+    min-height: -o-calc(100vh - 62px);
+    min-height: -webkit-calc(100vh - 62px);
+    min-height: -moz-calc(100vh - 62px);
+}
+.home-welcome-hero{
+    background-color: #fbd56c;
+    border-radius: 0.75rem;
+    height: 100%;
+}
+.home-welcome-hero .hero-body {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.home-status-hero{
+    background-color: #3fbc5d;
+    border-radius: 0.75rem;
+    height: 100%;
+}
+.home-status-hero .hero-body {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}

@@ -1,13 +1,31 @@
+/* Import Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+
+/* Declare Product Sans */
+@font-face {
+  font-family: 'Product Sans';
+  src: url("./assets/fonts/ProductSans-Regular.woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Product Sans, "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #202123 !important;
+  color: #E8EAED !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Color Palette */
+.has-dark-grey-bg{
+  background-color: #202123 !important;
+}
+.has-light-grey-text{
+  color: #E8EAED !important; 
+}
+
