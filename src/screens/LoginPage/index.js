@@ -8,29 +8,15 @@ import "./index.css";
 
 const LoginPage = () => {
 
-  const { signInWithAsgardeo } = useAuth();
+  // (5): Import the signInWithAsgardeo() method from the AuthContext
+
+
   const { enqueueSnackbar } = useSnackbar();
   const history = useHistory()
 
-  const initiateOIDCLogin = async (e) => {
-    e.preventDefault();
-    try {
-      const asgardeoResponse = await signInWithAsgardeo();
-      if (asgardeoResponse) {
-        history.replace("/");
-      }
-    } catch (err) {
-      console.log(err);
-      enqueueSnackbar("Login Failed", {
-        variant: 'error',
-        anchorOrigin: {
-          vertical: "top",
-          horizontal: "right",
-        },
+  // (6): Implement the initiateOIDCLogin() method
 
-      });
-    }
-  }
+
 
   return (
     <section className="login-page">
@@ -50,7 +36,8 @@ const LoginPage = () => {
               </h1>
               <img className="login-image" src={AsgardeoLogo} alt="DevFest" />
               <div className="login-button-holder mt-4">
-                <button className="button login-button mt-3" onClick={initiateOIDCLogin}>
+                {/* (7): Link the login button to the initiateOIDCLogin() method */}
+                <button className="button login-button mt-3" onClick={() => { }}>
                   <span className="icon">
                     <i className="fas fa-sign-in-alt"></i>
                   </span>
