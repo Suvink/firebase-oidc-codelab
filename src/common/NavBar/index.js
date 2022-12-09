@@ -9,7 +9,7 @@ import "./index.css";
 
 const NavBar = () => {
 
-  // (8): Import the signOutFromAsgardeo() method and user object from the AuthContext
+  // (8): Import the signOutFromAuth0() method and user object from the AuthContext
   
   
   const history = useHistory();
@@ -52,7 +52,7 @@ const NavBar = () => {
         <div className="navbar-start">
           <a className="navbar-item">Home</a>
           <a className="navbar-item">Dev Fest Sri Lanka</a>
-          <a className="navbar-item">Asgardeo</a>
+          <a className="navbar-item">Auth0</a>
         </div>
 
         {user && <div className="navbar-end">

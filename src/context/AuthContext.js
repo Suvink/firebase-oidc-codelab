@@ -9,11 +9,11 @@ const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true)
 
-    // (2): Implement the signInWithAsgardeo() method
+    // (2): Implement the signInWithAuth0() method
 
 
 
-    // (3): Implement the signOutFromAsgardeo() method
+    // (3): Implement the signOutFromAuth0() method
 
 
 
