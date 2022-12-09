@@ -17,6 +17,8 @@ const NavBar = () => {
 
   // (9): Implement the handleLogout() method
 
+  
+
   return (
     <nav
       className="navbar top-navbar"
@@ -52,7 +54,7 @@ const NavBar = () => {
           <a className="navbar-item">Dev Fest Sri Lanka</a>
           <a className="navbar-item">Asgardeo</a>
         </div>
-        
+
         {user && <div className="navbar-end">
           <a className="navbar-item">Hi {user ? user.displayName.split(" ")[0] : "There"}!</a>
           <div className="navbar-item has-dropdown is-hoverable">
@@ -61,7 +63,7 @@ const NavBar = () => {
               <figure className="image is-hidden-mobile">
                 <img
                   className="is-rounded"
-                  src={user ? user.photoURL : Avatar}
+                  src={user?.photoURL || Avatar}
                   alt="DevFest"
                 />
               </figure>

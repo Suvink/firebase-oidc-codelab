@@ -11,7 +11,11 @@ const AuthContextProvider = ({ children }) => {
 
     // (2): Implement the signInWithAsgardeo() method
 
+
+
     // (3): Implement the signOutFromAsgardeo() method
+
+
 
 
     useEffect(() => {
@@ -25,7 +29,7 @@ const AuthContextProvider = ({ children }) => {
     }, [])
 
     // (4): Pass the login and logout methods to the context provider.
-    return <authContext.Provider value={{ user, loading}}>
+    return <authContext.Provider value={{ user, loading }}>
         {children}
     </authContext.Provider>
 }
